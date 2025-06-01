@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inspiration | Amar Cheema</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #1a1a1a;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #444;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .person {
+      position: relative;
+      background: #222; /* Dark background for contrast */
+      border-radius: 10px;
+      padding: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      overflow: hidden;
+      text-align: center;
+      height: 320px; /* consistent height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .person img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: opacity 0.3s ease;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    /* Hide heading by default (no heading outside hover) */
+    .person h3 {
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-shadow: 0 0 5px rgba(0,0,0,0.8);
+      z-index: 3;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Paragraph text hidden by default */
+    .person p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.75);
+      color: white;
+      padding: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.3;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      height: 100%;
+      overflow-y: auto;
+      border-radius: 0 0 10px 10px;
+      pointer-events: none;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+
+    /* On hover show text and heading */
+    .person:hover img {
+      opacity: 0.3;
+    }
+    .person:hover h3 {
+      display: block;
+    }
+    .person:hover p {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+      background-color: #1a1a1a;
+      padding: 2rem 1rem;
+      border-top: 4px solid #0077cc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #eaeaea;
+      }
+
+      nav a {
+        color: #eaeaea;
+      }
+
+      nav a:hover {
+        border-color: #eaeaea;
+      }
+
+      .intro {
+        color: #ccc;
+      }
+
+      footer {
+        color: #aaa;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Inspiration</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="videos.html">Must Watch</a>
+      <a href="What I Stand For.html">What I Stand For</a>
+      <a href="connect.html">Connect</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      These are some of the thinkers, leaders, and writers whose courage and intellect have shaped the way I see the world.
+    </div>
+
+    <div class="grid">
+      <div class="person">
+        <img src="https://thumbs.dreamstime.com/b/nietzsche-portrait-line-art-friedrich-nietzsche-portrait-line-art-was-german-philosopher-philologist-poet-composer-138480592.jpg" alt="Friedrich Nietzsche" />
+        <p>Friedrich Nietzsche (1844–1900) was a German philosopher, cultural critic, and poet known for his profound ideas on morality, religion, and individuality. He challenged traditional values, famously declaring “God is dead,” and introduced concepts like the Übermensch and will to power. His work deeply influenced existentialism, postmodernism, and modern philosophy, though controversial in his lifetime.</p>
+      </div>
+
+      <div class="person">
+        <img src="https://islamabadpost.com.pk/wp-content/uploads/2025/04/1-133.png" alt="Malcolm X" />
+        <p>Allama Iqbal (1877–1938) was a renowned philosopher, poet, and thinker from British India. He inspired a vision of cultural and political revival through his poetry and ideas, emphasizing self-awareness, empowerment, and unity. His work played a significant role in shaping modern South Asian identity and remains influential in literature and philosophy today.
+</div>
+
+      <div class="person">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-544266826.jpg" alt="Arundhati Roy" />
+        <p>Napoleon Bonaparte (1769–1821) was a French military leader and emperor who reshaped Europe through his conquests during the Napoleonic Wars. Rising from a revolutionary officer to emperor, he introduced lasting legal reforms like the Napoleonic Code. His leadership profoundly influenced European politics, law, and military strategy, leaving a complex legacy of ambition, reform, and conflict.
+</div>
+
+      <div class="person">
+        <img src="data:image/jpeg;base64,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" alt="Cornel West" />
+        <p>Syed Muzammil Shah is a Pakistani journalist and political analyst known for his outspoken views on national issues. He has worked with major news channels like Neo TV and Express News, where he hosts the talk show *Statecraft*. Shah advocates for free speech but has faced threats and attacks due to his bold political commentary.
+</div>
+
+      <div class="person">
+        <img src="https://i.guim.co.uk/img/media/0b4f5d94eee3ddb703830c108c6951bab0bfe6d4/16_148_2539_1523/master/2539.jpg?width=465&dpr=1&s=none&crop=none" alt="Maya Angelou" />
+        <p>Simone de Beauvoir (1908–1986) was a French philosopher, writer, and feminist, best known for her groundbreaking work The Second Sex (1949). A key figure in existentialism, she argued that "one is not born, but rather becomes, a woman," highlighting the social construction of gender. Her ideas significantly influenced feminist thought and continue to shape discussions on gender and identit</div>
+
+      <div class="person">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3odyV5emx_wRepogm2pImWrOtrsqbI_dF-Q&s" alt="Nelson Mandela" />
+        <p>Dhruv Rathee (born 1994) is an Indian YouTuber and social media activist based in Germany. Known for his fact-based videos on politics, environment, and current affairs, he has over 34 million subscribers across multiple channels. An advocate for rational discourse, Rathee has faced controversies but remains influential in shaping public opinion through digital media.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="videos.html">Must Watch</a>
+      <a href="inspiration.html">Inspiration</a>
+      <a href="What I Stand For.html">What I Stand For</a>
+      <a href="connect.html">Connect</a>
+    </nav>
+    <nav aria-label="Social media links" style="margin-top: 1rem;">
+      <a href="https://x.com/theamarcheema" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"> Follow on X</a>
+    </nav>
+    <p style="margin-top: 1rem;">&copy; 2025 Amar Cheema. All rights reserved.</p>
+  </footer>
+</body>
+</html>
